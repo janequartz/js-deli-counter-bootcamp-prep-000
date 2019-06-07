@@ -18,7 +18,7 @@ function currentLine(line){
     for (let i = 0; i < line.length -1; i++){
       str += `${i+1}. ${line[i]} ` 
     }
-    str += `${line.length}. ${line[line.length-1]}`
+    str += `${line.length}. ${line[line.length-1]},`
     return str
   }
   else return "The line is currently empty."
