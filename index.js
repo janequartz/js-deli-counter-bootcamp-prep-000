@@ -15,8 +15,8 @@ function nowServing(katzDeliLine){
 function currentLine(line){
   if (line.length > 0){
     let str = "The line is currently: "
-    for (let i = 1; i < line.length -1; i++){
-      str += `${i}. ${line[i]} ` 
+    for (let i = 0; i <= line.length -1; i++){
+      str += `${i+1}. ${line[i]} ` 
     }
     str += `${line.length}. ${line[line.length]}`
     return str
